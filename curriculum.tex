@@ -4,19 +4,10 @@
 \usepackage[left=2.5cm,top=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{sectsty}
 
 \input{vars}
-
-\fancyhead{}
-\fancyhead[R]{Villamonte, Sebastián Ignacio}
-
-\fancyfoot{}
-\fancyfoot[C]{Page \textbf{\thepage}}
-
-\pagestyle{fancy}
-\fancypagestyle{plain}{
-    \fancyhead{}
-}
+\input{styles}
 
 \begin{document}
 \thispagestyle{empty}
@@ -32,5 +23,10 @@
 
 \bigskip
 \hrule
+
+\bigskip
+
+\section*{Abstract}
+\input{sections/abstract}
 
 \end{document}
