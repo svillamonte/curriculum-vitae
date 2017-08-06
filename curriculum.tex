@@ -1,0 +1,36 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.5cm,top=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+\input{vars}
+
+\fancyhead{}
+\fancyhead[R]{Villamonte, Sebastián Ignacio}
+
+\fancyfoot{}
+\fancyfoot[C]{Page \textbf{\thepage}}
+
+\pagestyle{fancy}
+\fancypagestyle{plain}{
+    \fancyhead{}
+}
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{flushright}
+    \huge{\textbf{\name}} \\
+    \large{Information Systems Engineer}
+\end{flushright}
+\hrule
+\bigskip
+
+\input{sections/details}
+
+\bigskip
+\hrule
+
+\end{document}
