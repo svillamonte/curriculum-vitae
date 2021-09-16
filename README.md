@@ -5,11 +5,17 @@ This repository is intended to hold the Latex source code for my personal resume
 
 It has been written using Visual Studio Code under Ubuntu and the following extensions:
 
-- Code Spellchecker ([link](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker))
-- LaTeX Language Support ([link](https://marketplace.visualstudio.com/items?itemName=ms-vscode.latex))
-- LaTeX Preview ([link](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)) 
+- _LaTeX Workshop_ ([link](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop))
 
-## References
+## Requirements
 
-- Installing Tex packages under Ubuntu ([link](http://kkpradeeban.blogspot.co.nz/2014/04/installing-latexpdflatex-on-ubuntu.html))
-- Configuring Visual Studio code for Latex support ([link](https://pmateusz.github.io/latex/2017/03/29/vs-code-latex-editor.html))
+1. Install _TeX Live_
+```
+sudo apt install texlive-base texlive-latex-extra
+```
+2. Install _latexmk_ (for enabling LaTeX Workshop "hot reload")
+```
+sudo apt install latexmk
+```
+3. Add latexmk to the PATH
+4. Profit
